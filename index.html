@@ -5,37 +5,48 @@
 <title>Capstone</title>
 <style>
 	body{
-		padding: 0px;
-		margin: 0px;
-		
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-collapse: collapse;
 	}
 	nav {
 		padding 0px;
 		height: 100vh;
 		width: 104px;
 		background-color: #202225;
-		position: absolute
-		
-	}	
-	.userframea{
-		width: 104px;
-		height: 142px;
-		background-color:#ff5f55;
 		position: absolute;
+		float:left;
 	}
-	.userframe{
-		width: 78px;
-		height: 78px;
-		margin-top: 32px;
-		margin-left: auto;
-		margin-right: auto;
-		background-color: #ffffff;
-		border-radius: 78px;
+	.userframea{
+		padding-top:32px;
+		width: 104px;
+		height: 110px;
+		background-color:#ff5f55;
+		background-image: url("https://i.imgur.com/4G0TFzq.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 70%;
+	}
+	.userframea:hover{
+		animation: hover;
+		animation-duration: 0.3s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes hover{
+		from{
+			background-color: #ff5f55;
+			background-image: url("https://i.imgur.com/4G0TFzq.png");
+		}
+		to{
+			background-color: #313336;
+			background-image: url("https://i.imgur.com/EP9B5iA.png");
+		}
 	}
 	.navicon{
 		width: 52px;
 		height: 52px;
-		margin: 10vh auto 4vh auto;
+		margin: 4vh auto 4vh auto;
 	}
 	
 </style>
@@ -49,11 +60,9 @@
 	<nav>
 		<div class="userframea">
 			<div class="userframe">
-				<img src="https://i.imgur.com/oJAOSsW.png" style="width:56px;margin-left:11px;margin-top:11px;">
 			</div>
 		</div>
 		<div class="navicon">
-			<img src="https://i.imgur.com/8ljfc76.png" style="width:52px;margin-top:146px;">
 		</div>
 		
 	</nav>
