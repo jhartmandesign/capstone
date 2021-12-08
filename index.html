@@ -20,7 +20,13 @@
 		float:left;
 	}
 	
-/* userframe */
+/*UI Text*/
+	.navtext{
+		padding-top:13px;
+		padding-left:13px;
+	}
+	
+/*User Icon*/
 	.userframe{
 		width: 104px;
 		height: 142px;
@@ -33,7 +39,7 @@
 	}
 	.userframe:hover{
 		animation: userhover;
-		animation-duration: 0.3s;
+		animation-duration: 0.5s;
 		animation-fill-mode: forwards;
 	}
 	@keyframes userhover{
@@ -50,19 +56,21 @@
 /*Dashboard Icon*/
 	.dashboardicon{
 		width: 104px;
-		height: 10vh;
-		min-height: 52px;
-		max-height: 62px;
+		height: 52px;
 		background-image: url("https://i.imgur.com/BKkxR4v.png");
 		background-repeat: no-repeat;
 		background-position: 30px;
 		background-size: 42px;
 		margin-top: 5vh;
 		border-radius: 0px 7px 7px 0px;
+		font-size: 30px;
+		font-family: "Sofia Pro";
+		color: #202225;
+		letter-spacing:-15pt;
 	}
 	.dashboardicon:hover{
 		animation: dashboardicon;
-		animation-duration: 0.3s;
+		animation-duration: 0.5s;
 		animation-fill-mode: forwards;
 	}
 	@keyframes dashboardicon{
@@ -70,42 +78,95 @@
 			background-color: #202225;
 			background-image: url("https://i.imgur.com/BKkxR4v.png");
 			width: 104px;
+			background-position: 50% 50%;
+			color: #202225;
+			letter-spacing:-7pt;
 		}
 		to{
 			background-color: #313336;
 			background-image: url("https://i.imgur.com/b9UiG6E.png");
-			width: 156px;
+			background-position: 97.5% 50%;
+			width: 240px;
+			color: #ffffff;
+			letter-spacing:0pt;
+		}
+	}
+	
+/*Courses Icon*/
+	.coursesicon{
+		width: 104px;
+		height: 52px;
+		background-image: url("https://i.imgur.com/sXztw1P.png");
+		background-repeat: no-repeat;
+		background-position: 30px;
+		background-size: 42px;
+		margin-top: 5vh;
+		border-radius: 0px 7px 7px 0px;
+		font-size: 30px;
+		font-family: "Sofia Pro";
+		color: #202225;
+		letter-spacing:-15pt;
+	}
+	.coursesicon:hover{
+		animation: coursesicon;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes coursesicon{
+		from{
+			background-color: #202225;
+			background-image: url("https://i.imgur.com/sXztw1P.png");
+			background-position: 50% 50%;
+			width: 104px;
+			color: #202225;
+			letter-spacing:-5pt;
+		}
+		to{
+			background-color: #313336;
+			background-image: url("https://i.imgur.com/VGUFlb5.png");
+			background-position: 94% 50%;
+			width: 200px;
+			color: #ffffff;
+			letter-spacing:0pt;
 		}
 	}
 	
 /*Calendar Icon*/
 	.calendaricon{
 		width: 104px;
-		height: 10vh;
-		min-height: 52px;
-		max-height: 62px;
+		height: 52px;
 		background-image: url("https://i.imgur.com/8ljfc76.png");
 		background-repeat: no-repeat;
-		background-position: 30px;
+		background-position: 50% 50%;
 		background-size: 42px;
 		margin-top: 5vh;
 		border-radius: 0px 7px 7px 0px;
+		font-size: 30px;
+		font-family: "Sofia Pro";
+		color: #202225;
+		letter-spacing:-15pt;
 	}
 	.calendaricon:hover{
 		animation: calendaricon;
-		animation-duration: 0.3s;
+		animation-duration: 0.5s;
 		animation-fill-mode: forwards;
 	}
 	@keyframes calendaricon{
 		from{
 			background-color: #202225;
 			background-image: url("https://i.imgur.com/8ljfc76.png");
+			background-position: 50% 50%;
 			width: 104px;
+			color: #202225;
+			letter-spacing:-5pt;
 		}
 		to{
 			background-color: #313336;
 			background-image: url("https://i.imgur.com/8ljfc76.png");
-			width: 156px;
+			background-position: 96% 50%;
+			width: 225px;
+			color: #ffffff;
+			letter-spacing:0pt;
 		}
 	}
 	
@@ -122,8 +183,13 @@
 		<div class="userframe">
 		</div>
 		<div class="dashboardicon">
+			<p class="navtext">Dashboard</p>
+		</div>
+		<div class="coursesicon">
+			<p class="navtext">Courses</p>
 		</div>
 		<div class="calendaricon">
+			<p class="navtext">Calendar</p>
 		</div>
 		
 	</nav>
