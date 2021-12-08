@@ -7,6 +7,7 @@
 	
 	body{
     padding: 0px;
+	min-height: 1000px;
     margin: 0px;
     border: 0px;
     border-collapse: collapse;
@@ -70,6 +71,7 @@
 	}
 	.dashboardicon:hover{
 		animation: dashboardicon;
+		animation-timing-function: ease-in-out;
 		animation-duration: 0.5s;
 		animation-fill-mode: forwards;
 	}
@@ -109,6 +111,7 @@
 	}
 	.coursesicon:hover{
 		animation: coursesicon;
+		animation-timing-function: ease-in-out;
 		animation-duration: 0.5s;
 		animation-fill-mode: forwards;
 	}
@@ -124,7 +127,7 @@
 		to{
 			background-color: #313336;
 			background-image: url("https://i.imgur.com/VGUFlb5.png");
-			background-position: 94% 50%;
+			background-position: 96% 50%;
 			width: 200px;
 			color: #ffffff;
 			letter-spacing:0pt;
@@ -140,25 +143,28 @@
 		background-position: 50% 50%;
 		background-size: 42px;
 		margin-top: 5vh;
-		border-radius: 0px 7px 7px 0px;
+		border-radius: 0px 0px 0px 0px;
 		font-size: 30px;
 		font-family: "Sofia Pro";
-		color: #202225;
+		color: #ffffff;
 		letter-spacing:-15pt;
+		background-color: #ffffff;
 	}
 	.calendaricon:hover{
 		animation: calendaricon;
+		animation-timing-function: ease-in-out;		
 		animation-duration: 0.5s;
 		animation-fill-mode: forwards;
 	}
 	@keyframes calendaricon{
 		from{
-			background-color: #202225;
+			background-color: #ffffff;
 			background-image: url("https://i.imgur.com/8ljfc76.png");
 			background-position: 50% 50%;
 			width: 104px;
-			color: #202225;
+			color: #ffffff;
 			letter-spacing:-5pt;
+			border-radius: 0px 0px 0px 0px;
 		}
 		to{
 			background-color: #313336;
@@ -167,6 +173,7 @@
 			width: 225px;
 			color: #ffffff;
 			letter-spacing:0pt;
+			border-radius: 0px 7px 7px 0px;
 		}
 	}
 	
@@ -178,20 +185,22 @@
 	
 	
 <body>
+	<div>
 <! Side Nav >
-	<nav>
-		<div class="userframe">
-		</div>
-		<div class="dashboardicon">
-			<p class="navtext">Dashboard</p>
-		</div>
-		<div class="coursesicon">
-			<p class="navtext">Courses</p>
-		</div>
-		<div class="calendaricon">
-			<p class="navtext">Calendar</p>
-		</div>
-		
-	</nav>
+		<nav>
+			<div class="userframe">
+			</div>
+			<div class="dashboardicon">
+				<p class="navtext">Dashboard</p>
+			</div>
+			<div class="coursesicon">
+				<p class="navtext">Courses</p>
+			</div>
+			<div class="calendaricon">
+				<p class="navtext">Calendar</p>
+			</div>
+		</nav>
+	</div>
+
 </body>
 </html>
