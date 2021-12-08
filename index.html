@@ -24,7 +24,7 @@
 /*UI Text*/
 	.navtext{
 		padding-top:13px;
-		padding-left:13px;
+		padding-left:6px;
 	}
 	
 /*User Icon*/
@@ -177,7 +177,48 @@
 		}
 	}
 	
-
+/*Messages Icon*/
+	.messagesicon{
+		width: 104px;
+		height: 52px;
+		background-image: url("https://i.imgur.com/ncaYDPO.png");
+		background-repeat: no-repeat;
+		background-position: 30px;
+		background-size: 42px;
+		margin-top: 5vh;
+		border-radius: 0px 7px 7px 0px;
+		font-size: 30px;
+		font-family: "Sofia Pro";
+		color: #202225;
+		letter-spacing:-20pt;
+		padding-left: 0px;
+		margin-left: 0px;
+	}
+	.messagesicon:hover{
+		animation: messagesicon;
+		animation-timing-function: ease-in-out;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes messagesicon{
+		from{
+			background-color: #202225;
+			background-image: url("https://i.imgur.com/sXztw1P.png");
+			background-position: 50% 50%;
+			width: 104px;
+			color: #202225;
+			letter-spacing:-5pt;
+			padding-left: 0px;
+		}
+		to{
+			background-color: #313336;
+			background-image: url("https://i.imgur.com/VGUFlb5.png");
+			background-position: 96% 50%;
+			width: 200px;
+			color: #ffffff;
+			letter-spacing:0pt;
+		}
+	}
 </style>
 </head>
 
@@ -198,6 +239,9 @@
 			</div>
 			<div class="calendaricon">
 				<p class="navtext">Calendar</p>
+			</div>
+			<div class="messagesicon">
+				<p class=navtext>Messages</p>
 			</div>
 		</nav>
 	</div>
