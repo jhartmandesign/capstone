@@ -46,15 +46,44 @@
 		}
 	}
 	
+/*Dashboard Icon*/
+	.dashboardicon{
+		width: 104px;
+		height: 10vh;
+		min-height: 52px;
+		background-image: url("https://i.imgur.com/BKkxR4v.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 42px;
+		margin-top: 20px;
+	}
+	.dashboardicon:hover{
+		animation: dashboardicon;
+		animation-duration: 0.3s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes dashboardicon{
+		from{
+			background-color: #202225;
+			background-image: url("https://i.imgur.com/BKkxR4v.png");
+			width: 104px;
+		}
+		to{
+			background-color: #313336;
+			background-image: url("https://i.imgur.com/b9UiG6E.png");
+			width: 156px;
+		}
+	}
+	
 /*Calendar Icon*/
 	.calendaricon{
 		width: 104px;
 		height: 10vh;
-		min-height: 74px;
+		min-height: 52px;
 		background-image: url("https://i.imgur.com/8ljfc76.png");
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 40%;
+		background-size: 42px;
 		margin-top: 20px;
 	}
 	.calendaricon:hover{
@@ -65,14 +94,12 @@
 	@keyframes calendaricon{
 		from{
 			background-color: #202225;
-			background-image: url("https://i.imgur.com/P7tjaHD.png");
-			background-size: 40%;
+			background-image: url("https://i.imgur.com/8ljfc76.png");
 			width: 104px;
 		}
 		to{
 			background-color: #313336;
-			background-image: url("https://i.imgur.com/P7tjaHD.png");
-			background-size: 30%;
+			background-image: url("https://i.imgur.com/8ljfc76.png");
 			width: 156px;
 		}
 	}
@@ -88,6 +115,8 @@
 <! Side Nav >
 	<nav>
 		<div class="userframe">
+		</div>
+		<div class="dashboardicon">
 		</div>
 		<div class="calendaricon">
 		</div>
